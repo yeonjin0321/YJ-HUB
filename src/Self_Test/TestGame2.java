@@ -1,7 +1,6 @@
 package Self_Test;
 
 import java.util.Scanner;
-import java.util.Random;
 
 public class TestGame2 {
 	public static void main(String[] args) {

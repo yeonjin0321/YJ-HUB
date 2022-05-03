@@ -27,7 +27,7 @@ public class Method_1 {
 		m1.methodA();
 		m1.methodB();
 		m1.methodC();
-		m1.methodD("안녕하세요");
+		m1.methodD("안녕");
 	}
 
 }

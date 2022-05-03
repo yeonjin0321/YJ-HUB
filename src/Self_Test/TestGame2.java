@@ -18,7 +18,7 @@ public class TestGame2 {
 			userNum = scanner.nextInt();
 			if (userNum < 1 || userNum > 9) {
 				System.out.println("값을 다시 입력하세요");
-				i = i + 1;
+				i = i++;
 			} else {
 
 				if (userNum == randNum) {

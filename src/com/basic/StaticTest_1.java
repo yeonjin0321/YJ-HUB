@@ -4,7 +4,7 @@ public class StaticTest_1 {
 	// 선언부
 	
 	// 사용자 정의 메소드
-	void methodA() {
+	void methodA() { //static이 안붙어 있으므로 밑에서 인스턴스화를 하고 써야함
 		System.out.println("methodA 호출 성공");
 	}
 	// 메인메소드

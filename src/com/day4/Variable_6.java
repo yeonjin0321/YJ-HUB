@@ -14,7 +14,7 @@ public class Variable_6 {
 		//i = 10;// 변수의 초기화
 		//지변 i는 다른 메소드에서도 유지가 되나요?
 		Variable_6 v6 = new Variable_6();
-		//i = 100;
+		i = 100;
 		v6.methodA(v6.i);
 	}
 

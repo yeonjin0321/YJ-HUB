@@ -1,4 +1,5 @@
 package swing.template;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -16,12 +17,12 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class JTextAreaSample_5 implements ActionListener{
-	JMenuBar    jmb			= new JMenuBar();
+	JMenuBar    jmb			= new JMenuBar(); //인스턴스화 목록
 	JMenu       jm_file		= new JMenu("File");
-	JMenuItem   jmi_new		= new JMenuItem("New");
+	JMenuItem   jmi_new		= new JMenuItem("New"); // 뉴 오픈 세이브
 	JMenuItem   jmi_open	= new JMenuItem("Open");
 	JMenuItem   jmi_save	= new JMenuItem("Save");
-	JSeparator  js_exit	    = new JSeparator();
+	JSeparator  js_exit	    = new JSeparator(); 
 	JMenuItem   jmi_exit	= new JMenuItem("종료");
 	JMenu       jm_game		= new JMenu("Game");
 	JMenuItem   jmi_ngame	= new JMenuItem("새게임");
@@ -40,6 +41,7 @@ public class JTextAreaSample_5 implements ActionListener{
 	JButton 	jbtn_dap  	= new JButton("정답");
 	JButton 	jbtn_clear  = new JButton("지우기");
 	JButton 	jbtn_exit  	= new JButton("종료");
+	
 	public void initDisplay() {
 		jtf.addActionListener(this);
 		jm_file.add(jmi_new);
@@ -54,7 +56,7 @@ public class JTextAreaSample_5 implements ActionListener{
 		jmb.add(jm_file);
 		jmb.add(jm_game);
 		jf.setJMenuBar(jmb);
-		jf.setTitle("JTextArea샘플");
+		jf.setTitle("MINI 야구게임");
 		jtf.setBackground(Color.lightGray);
 		jp_center.setLayout(new BorderLayout());
 		jp_center.add("Center", jsp);
@@ -70,7 +72,7 @@ public class JTextAreaSample_5 implements ActionListener{
 		jf.setVisible(true);
 	}
 	public static void main(String[] args) {
-		JTextAreaSample_4 jtas = new JTextAreaSample_4();
+		JTextAreaSample_5 jtas = new JTextAreaSample_5();
 		jtas.initDisplay();
 	}
 	@Override

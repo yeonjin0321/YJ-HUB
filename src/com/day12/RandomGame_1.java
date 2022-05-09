@@ -34,7 +34,7 @@ public class RandomGame_1 {
 		}
 		System.out.println("while문을 탈출하면 여기가 출력된다.");
 	}
-
+	}
 	public static void main(String[] args) {
 		// 메소드 호출시 구현된 메소드 앞에 static이 있으면 인스턴스화 없이 클래스 타입.메소드 명으로 호출이 가능하다
 		RandomGame_1.gameStart();

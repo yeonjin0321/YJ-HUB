@@ -7,11 +7,11 @@ public class StringArray {
 		for (int i = 0; i < names.length; i++) {
 			System.out.println(names[i]);
 		}
-
-		for (String name : names) { //향상된 for문
+		System.out.println();
+		for (String name : names) { // 향상된 for문
 			System.out.println(name);
 		}
-		
+
 	}
 
 }

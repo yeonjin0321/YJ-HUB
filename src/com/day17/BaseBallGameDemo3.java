@@ -15,13 +15,15 @@ public class BaseBallGameDemo3 {
 		try {
 			temp = Integer.parseInt(input);
 		} catch (NumberFormatException ex) {
+			System.out.println("숫자만 입력하세요");
+			
 			return "숫자만 입력하세요.";
 		}
 		return "1스 0볼";
 	}
 	public static void main(String[] args) {
 		BaseBallGameDemo3 bbg = new BaseBallGameDemo3();
-		String result = bbg.account("333");
+		String result = bbg.account("안녕");
 		System.out.println("판정 결과:"+result);
 	}
 

@@ -19,6 +19,7 @@ public class BaseBallGameDemo1 {
 	public static void main(String[] args) {
 		BaseBallGameDemo1 bbg = new BaseBallGameDemo1();
 		int result = bbg.userInput("123");
+		
 		System.out.println("사용자가 입력한 값은 " + result);
 	}
 

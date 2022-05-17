@@ -14,9 +14,9 @@ import java.util.*;
 public class TimeServer extends Thread {
 	// 클라이언트가 서버에 접속해 오면 클라이언트의 소켓 정보를 담을 소켓 선언임
 	// null인 상태로 있다가 클라이언트측에서 인스턴스화 된 정보를 받아서 담게 됨
-	private Socket socket;
+	private Socket socket; //소켓 선언.
 
-	public TimeServer(Socket s) {
+	public TimeServer(Socket s) { //생성자
 		this.socket = s;
 	}
 
@@ -60,7 +60,7 @@ public class TimeServer extends Thread {
 
 //run() 종료
 	// 현재 시간 정보를 생산하는 메소드 구현하기
-	private String getTimeStr() {
+	private String getTimeStr() { //현재 시간을 반환해주는 메소드
 		// 카렌더 클래스를 이용하면 현재 시간 정보를 가져오는 메소드 호출 가능함.
 		Calendar cal = Calendar.getInstance();
 		int hour = cal.get(Calendar.HOUR_OF_DAY);
@@ -80,7 +80,7 @@ public class TimeServer extends Thread {
 		// 1번 부터 6557X번호 사이에 있는 숫자를 사용할 수 있지만 보통 운영체제가 1~1023번 까지는 사용하므로
 		// 이 구간 번호는 제외하고 사용해야 함. 반드시 지켜야 함
 		// 이미 할당된 번호를 사용하면 에러 발생함
-		int port = 7777;
+		int port = 6666;
 		// 언제 접속을 시도할지 예측할 수 없는 클라이언트측을 위해 서버측에서만 제공함
 		ServerSocket server = null;
 		// ServerSocket에 접속 해온 클라이언트측 정보를 받을 객체 선언

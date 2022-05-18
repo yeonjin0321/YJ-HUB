@@ -14,7 +14,11 @@ public class MiniDuckSimulator {
 		myDuck = new RubberDuck();
 		myDuck.display();
 		myDuck.performFly();
-		
+		WoodDuck herDuck = new WoodDuck();
+		herDuck.performFly();
+		herDuck = (WoodDuck)myDuck; //강제 형변환!
+		herDuck.display(); //ClassCastException
+		//myDuck = herDuck;
 		
 		//mallard.performQuack();
 		//mallard.performFly();
